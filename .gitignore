@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+mlruns/
+mlflow.db
+logs/*.log
+.coverage
+htmlcov/
+*.tmp
+*.download
+.DS_Store
