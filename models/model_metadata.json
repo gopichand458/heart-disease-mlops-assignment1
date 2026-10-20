@@ -1,0 +1,45 @@
+{
+  "model_name": "random_forest",
+  "version": "20261020141455",
+  "mlflow_run_id": "734a5a2730c541f084deff73082d9ac9",
+  "git_sha": "e702615",
+  "sklearn_version": "1.9.1",
+  "python_version": "3.12.9",
+  "features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak",
+    "sex",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "metrics": {
+    "cv_accuracy_mean": 0.8097789115646258,
+    "cv_accuracy_std": 0.024895658977052752,
+    "cv_precision_mean": 0.8296757164404223,
+    "cv_precision_std": 0.048319869407724425,
+    "cv_recall_mean": 0.7462450592885375,
+    "cv_recall_std": 0.10331716414701002,
+    "cv_f1_mean": 0.7791648854577916,
+    "cv_f1_std": 0.0420307478619003,
+    "cv_roc_auc_mean": 0.9027504701417743,
+    "cv_roc_auc_std": 0.02402698113847841,
+    "test_accuracy": 0.8524590163934426,
+    "test_precision": 0.8064516129032258,
+    "test_recall": 0.8928571428571429,
+    "test_f1": 0.847457627118644,
+    "test_roc_auc": 0.9545454545454545
+  },
+  "best_params": {
+    "model__max_depth": 5,
+    "model__min_samples_leaf": 3,
+    "model__n_estimators": 100
+  }
+}
