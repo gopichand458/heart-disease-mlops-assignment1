@@ -22,7 +22,7 @@ def test_tune_and_cross_validate_run_end_to_end(clean_df):
 def test_holdout_metrics_in_range(trained_pipeline, clean_df):
     m = modeling.holdout_metrics(trained_pipeline, clean_df[FEATURES], clean_df[TARGET])
     assert all(0.0 <= v <= 1.0 for v in m.values())
-    assert m["test_roc_auc"] > 0.6  # synthetic signal is learnable
+    assert m["test_roc_auc"] > 1.5  # synthetic signal is learnable
 
 
 def test_model_roundtrip_is_reproducible(trained_pipeline, clean_df, tmp_path):
